@@ -1,0 +1,77 @@
+<div class="body-login">
+    <div class="form rounded">
+        <div id="logo">
+            <img src="../../../assets/img/login/LOGO-FENDER.png" class="cursor" alt="Fender"
+                [routerLink]="['/']">
+        </div>
+        <div class="contentForm">
+            <form #useForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="content">
+                    <div class="input-data">
+                        <input type="email" name="email" #empresa="ngModel" [(ngModel)]="login.email"
+                            placeholder="Correo electrónico" required>
+                        <small *ngIf="!empresa.valid && empresa.touched">
+                            <br> El campo no es válido
+                        </small>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" name="usuario" #usuario="ngModel" [(ngModel)]="login.usuario"
+                            placeholder="Usuario" required>
+                        <small *ngIf="!usuario.valid && usuario.touched">
+                            <br> El campo no es válido
+                        </small>
+                    </div>
+                    <div class="input-data">
+                        <input type="password" name="pass" #pass="ngModel" [(ngModel)]="login.password"
+                            placeholder="Contraseña" required>
+                        <small *ngIf="!pass.valid && pass.touched">
+                            <br> El campo no es válido
+                        </small>
+                    </div>
+                    <small *ngIf="aviso != ''">
+                        {{aviso}}
+                    </small>
+                    <input type="submit" value="ENVIAR" class="btn btn-success" [disabled]="useForm.invalid">
+                </div>
+            </form>
+            <a [routerLink]="['/register']">¿Aún no tienes cuenta? Crear una nueva.</a>
+            <div class="imgs">
+                <div class="contactos">
+                    <tr class="tabla-contactos">
+                        <td>
+                            <p class="cabeza"><strong>SOPORTE:</strong> </p>
+                            <p class="horario"><strong>Servicio 24 horas</strong></p>
+                            <p class="contacto">81 8161 7768<br>soporte@fender.com</p>
+                        </td>
+                        <td>
+                            <p class="cabeza"><strong>ADMINISTRACIÓN:</strong> </p>
+                            <p class="horario"><strong>9:30 am a 7:30 pm (hora centro)</strong></p>
+                            <p class="contacto">(686)514 0940<br>andministracion@fender.com</p>
+                        </td>
+                        <td>
+                            <p class="cabeza"><strong>LOCALIZACIÓN:</strong> </p>
+                            <p class="horario"><strong>9:30 am a 7:30 pm (hora centro)</strong></p>
+                            <p class="contacto">(686) 564 6772<br>soporte.localiza@fender.com</p>
+                        </td>
+                        <td>
+                            <p class="cabeza"><strong>ATN A CLIENTES:</strong></p>
+                            <p class="horario"><strong>Lun-Vie 8:30 am a 8:30 pm (hora centro)</strong> </p>
+                            <p class="contacto">(686)564 9263<br>servicio.soporte@fender.com</p>
+                        </td>
+                        <td>
+                            <p class="cabeza"><strong>VENTAS:</strong></p>
+                            <p class="horario"><strong>9:30 am a 7:30 pm (hora centro)</strong></p>
+                            <p class="contacto">(686)514 0943<br>ventas@fender.com</p>
+                        </td>
+                    </tr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <app-sidebar id="sidebar"></app-sidebar>
+    </div>
+    <div class="footer">
+        <app-footer></app-footer>
+    </div>
+</div>

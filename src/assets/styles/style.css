@@ -1,0 +1,329 @@
+section{
+    display: block;
+    width: 100%;
+}
+/*body{
+    background-image: url(/FenderProject/src/assets/img/login/LOGO-FENDER.png);
+}*/
+.body-login{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    left: 10%;
+    padding-top: 2%;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#footer{
+    background: transparent;
+    width: 100%;
+    height: 70px;
+    color: #444;
+}
+#footer{
+    margin: 0p;
+    padding: 0px;
+    text-align: center;
+    background-color: transparent;
+}
+#logo img{
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+.form{
+    display:block;
+    margin-left:  10px;
+    background-color: rgba(245, 245, 245, 0.603);
+    width: 100%;
+    height: 100%;
+}
+
+.contentForm .input-data input,.btn{
+    display: inline-block;
+    width: 60%;
+    min-height: 30px;
+    margin-bottom: 5px;
+    padding: 3px;
+    transition: 300ms all;
+}
+.btn{
+    background: black;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 300ms all;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-success{
+    background: #222121;
+}
+.btn-success:hover{
+    background:  rgba(63, 59, 54, 0.568);
+    ;
+}
+.cursor{
+    cursor: pointer;
+    cursor: hand;
+}
+.contactos{
+    width: 70%;
+    height: auto;
+    text-align:left;
+    padding-left: 20%;
+
+
+}
+.tabla-contactos td{
+    display:inline-table;
+    width: 50%;
+    margin: 0px;
+    padding-bottom: 5px;
+
+}
+.tabla-contactos td .cabeza{
+    font-size: 10px;
+    color: #222121;
+    margin: 0px;
+}
+.tabla-contactos td .horario{
+    font-size: 7px;
+    color: #222121;
+    margin: 0px;
+}
+.tabla-contactos td .contacto{
+    font-size: 8px;
+    margin: 0px;
+}
+#content{
+    width: 70%;
+    float: left;
+    min-height: 650px;
+    margin-right: 20px;
+}
+#sidebar{
+    width: 95%;
+    height: 99%;
+    margin-left: 10px;
+    display: inline-block;
+}
+.aviso-superior{
+    display: flex;
+    margin: 0px auto;
+    padding: 5px;
+    text-align: justify;
+    font-size: 10px;
+    width: 98%;
+}
+.container-aviso{
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.349);
+    border-radius: 20px;
+    font-size: 18px;
+    width: 100%;
+}
+.imgAviso{
+    display: none;
+    width: 10%;
+}
+.imgAviso img{
+    width: 100%;
+    height: 100%;
+}
+.imgPanel{
+    display: grid;
+    height: 100%;
+    
+}
+.container{
+    max-height: 90%;
+    border-radius: 20px;
+    max-width: 100%;
+}
+.container img{
+    border-radius: 20px;
+    max-width:100%;
+    max-height: 100%;
+    object-fit: fill;
+}
+.container:first-child{
+    background-image: url("https://stuff.fendergarage.com/images/G/o/i/Web_Fender_2022NewReleasesforH1_ShopRequest_HomepageShopCard_FINAL@2x.jpg");
+    background-position: center;
+}
+.container:nth-child(2){
+    background-image: url("https://stuff.fendergarage.com/images/9/9/7/Web_Ecomm_0216_PedalBundlesGuide_ShopCard_FINAL@2x.jpg");
+    background-position: center;
+}
+.container:nth-child(3){
+    background-image: url("https://stuff.fendergarage.com/images/W/B/w/player-plus-feed-card@2x.jpg");
+    background-position: center;
+}
+.container:nth-child(4){
+    background-image: url("https://stuff.fendergarage.com/images/D/u/5/sqclassicvibe-feedcard@2x.jpg");
+    background-position: center;
+}
+
+.container:hover{
+  box-shadow: 0px 0px 50px rgb(173, 159, 159);
+  text-align: center;
+  transition: 300ms all;
+}
+
+.container .content{
+    margin: 0%;
+    padding-bottom: 63%;
+
+}
+.rounded{
+    border-radius: 20px;
+}
+.foot{
+    margin-top: 1%;
+    display: inline-flex;
+    width: 98%;
+    max-height: auto;
+}
+
+.footer-left{
+ width: 50%;
+ background-color:transparent;
+ margin-left: 3%;
+}
+
+.footer-left .span{
+    display:inline;
+    margin: 0px;
+    text-align: center;
+    font-size: 10px;
+    width: 80%;
+    max-height: 10%;
+   }
+
+.footer-right{
+    width: 50%;
+    background-color: gray;
+    margin-left: 1%;
+    background-color: transparent;
+}
+.links-foot a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #222121;
+    margin: 0px;
+    text-align: center;
+}
+.links-foot a:hover{
+    color: #22212162;
+}
+.mat-drawer {
+    max-width: 70%;
+    align-items: center;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.87);
+  }
+@media(max-width:1080px) {
+    .body-login{
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+    .container-aviso{
+        margin-left: 15px;
+    }
+    .aviso-superior{
+        margin-left: 15px;
+    }
+    #sidebar{
+        display: none;
+    }
+    #sidebar-nav{
+        width: 80%;
+        height: 100%;
+        display: inline-block;
+    }
+    .form{
+        display:block;
+        background-color: rgba(255, 255, 255, 0.445);
+        width: 70%;
+        margin-left: 15%;
+        height: 100%;
+    }
+    #logo img{
+        width: 50%;
+        margin: 0px auto;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .foot{
+        margin-top: 1%;
+        display: inline-block;
+        width: 98%;
+        max-height: auto;
+    }
+    .imgPanel{
+        display: block;
+        height: 80%;
+    }
+    .container:hover{
+        box-shadow: 0px 0px 0px rgb(173, 159, 159);
+        text-align: center;
+        transition: 300ms all;
+      }
+    .footer-left{
+        width: 100%;
+        background-color:transparent;
+        margin-left: 3%;
+       }
+       
+       .footer-right{
+           width: 100%;
+           padding-top: 10px;
+           background-color: gray;
+           margin-left: 1%;
+           background-color: transparent;
+       }
+    
+}
+@media (min-width: 768px){
+    .imgPanel{
+        margin-left: 0%;
+    }
+}
+@media (max-width:571px){
+    .body-login{
+        width: 100%;
+    }
+    #logo{
+        width: auto;
+        margin: 0px auto;
+        font-size: 30px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+    .links-foot a{
+        color: #FF8000;
+    }
+    .links-foot a:hover{
+        color: #ff80005e;
+    }
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+
